@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lyontech Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Lyon<span class="nav__logo-tech">Tech</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="aboutus.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact-us.html" class="nav__link active-link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="assets/pdf/resume.pdf" download class="nav__download"><i class='bx bxs-download'></i> <span>Resume</span></a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class='bx bx-x'></i></div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle"><i class='bx bx-grid-alt'></i></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== CONTACT HEADER ====================-->
+        <section class="contact-header section">
+            <div class="contact-header__container container">
+                <h1 class="contact-header__title">Contact Us</h1>
+                <div class="contact-header__breadcrumb">
+                    <a href="index.html">Home</a> / <span>Contact</span>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT SECTION ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <!-- Left Side: Form -->
+                <div class="contact__content">
+                    <h3 class="contact__title">Get In Touch</h3>
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <input type="text" name="name" placeholder="Your Name" class="contact__form-input" required>
+                        </div>
+                        <div class="contact__form-div">
+                            <input type="email" name="email" placeholder="Your Email" class="contact__form-input" required>
+                        </div>
+                        <div class="contact__form-div">
+                            <input type="text" name="subject" placeholder="Subject" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <textarea name="message" cols="30" rows="10" placeholder="Your Message" class="contact__form-input"></textarea>
+                        </div>
+                        <button type="submit" class="button contact__button">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Right Side: Info & Map -->
+                <div class="contact__content">
+                    <p class="contact__intro">We’re here to help. Reach out to us for inquiries, support, or partnerships.</p>
+                    <div class="contact__info">
+                        <div class="contact__info-item">
+                            <i class='bx bxs-phone'></i>
+                            <a href="tel:+254700123456">+254 700 123 456</a>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class='bx bxs-envelope'></i>
+                            <a href="mailto:info@lyontech.co.ke">info@lyontech.co.ke</a>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class='bx bxl-whatsapp'></i>
+                            <a href="https://wa.me/254711987654">+254 711 987 654</a>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class='bx bxs-map'></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3585373534!2d36.70730848687393!3d-1.302861644033944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1679842299944!5m2!1sen!2ske" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CTA ====================-->
+        <section class="cta section">
+            <div class="cta__container container">
+                <h2 class="cta__title">Let’s Build the Future of Tech Together</h2>
+                <p class="cta__description">Partner with us to create intelligent, future-ready software solutions.</p>
+                <a href="#" class="button cta__button">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container">
+            <div class="footer__top grid">
+                <div class="footer__content">
+                    <a href="index.html" class="footer__logo">Lyon<span class="nav__logo-tech">Tech</span></a>
+                    <p class="footer__description">Empowering innovation through smart software solutions.</p>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html#about" class="footer__link">About</a></li>
+                        <li><a href="services.html" class="footer__link">Pricing</a></li>
+                        <li><a href="index.html#projects" class="footer__link">Projects</a></li>
+                        <li><a href="contact-us.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Get in Touch</h3>
+                    <ul class="footer__links">
+                        <li class="footer__info"><i class='bx bxs-map'></i> Nairobi, Kenya</li>
+                        <li class="footer__info"><i class='bx bxs-phone'></i> +254 700 123 456</li>
+                        <li class="footer__info"><i class='bx bxs-envelope'></i> info@lyontech.co.ke</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Newsletter</h3>
+                <p class="footer__description">Subscribe for the latest news and updates.</p>
+                <form action="" class="footer__newsletter-form">
+                    <input type="email" placeholder="Your Email" class="footer__newsletter-input" required>
+                    <button type="submit" class="button footer__newsletter-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <span class="footer__copy">&#169; 2025 Lyontech Ltd | All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!--==================== WHATSAPP FLOAT ====================-->
+    <a href="https://wa.me/254757308631" class="whatsapp-float" target="_blank">
+        <i class='bx bxl-whatsapp whatsapp-float__icon'></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
