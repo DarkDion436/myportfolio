@@ -261,13 +261,12 @@ ul {
 }
 
 .home__scroll {
-  display: flex;
+  display: none; /* Hide by default on smaller screens */
   align-items: center;
   justify-content: center;
   column-gap: .5rem;
   padding-top: 6rem;
   color: var(--title-color);
-  font-size: var(--small-font-size);
   font-weight: 500;
 }
 
@@ -1244,10 +1243,11 @@ ul {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: hsla(251, 34%, 61%, 0.1);
-    backdrop-filter: blur(16px); /* Consider removing -webkit- prefix */
+    background-color: hsla(228, 66%, 53%, 0.1);
+    border: 2px solid hsla(228, 66%, 53%, 0.2);
+    backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(16px);
-    box-shadow: -1px 0 4px hsla(228, 4%, 15%, .1);
+    box-shadow: 0 4px 30px hsla(0, 0%, 0%, 0.1);
     padding: 4.5rem 2rem;
     text-align: center;
     overflow-y: auto; /* Allow vertical scrolling if content overflows */
@@ -1275,6 +1275,21 @@ ul {
   .show-menu {
     right: 0;
   }
+  .home__data{
+    text-align: center;
+  }
+  .home__title{
+    font-size: 3.2rem;
+    margin-top: 100px;
+  }
+  .home__subtitle{
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  .home__buttons a{
+    font-size: 14px;
+    padding: .6rem 1rem;        
+  }
 
   .about-company__container {
     flex-direction: column;
@@ -1293,6 +1308,7 @@ ul {
     height: auto;
     grid-template-columns: 1fr;
     
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact__container{
     flex-direction: column;
@@ -1315,6 +1331,7 @@ ul {
 
 /* For large devices */
 @media screen and (min-width: 768px) {
+  
   .nav__list {
     display: flex;
     column-gap: 2rem;
@@ -1345,6 +1362,9 @@ ul {
       grid-template-columns: repeat(2, 1fr);
       align-items: flex-start;
   }
+  .home__scroll{
+    display: flex; /* Show on larger screens */
+  }
   .footer__top {
       grid-template-columns: repeat(3, 1fr);
   }
@@ -1361,12 +1381,25 @@ ul {
   .about-company__data{
     font-size: 15px;
   }
+  .home__title{
+    font-size: 3.2rem;
+    margin-top: 100px;
+  }
+  .home__subtitle{
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+  }
+  .home__buttons a{
+    font-size: 14px;
+    padding: .6rem 1rem;        
+  }
   
 }
 
 /* For extra large devices */
 @media screen and (min-width: 1024px) {
   .container {
+    max-width: 968px;
     margin-left: auto;
     margin-right: auto;
   }
